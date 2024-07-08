@@ -1,4 +1,8 @@
 # Learning Express.js with React as a Frontend
+
+
+![image](https://miro.medium.com/v2/resize:fit:1024/1*8h3CgFKuecxPcO5QEWsxJQ.jpeg)
+
 ## Introduction
 This is a simple project to learn how to use Express.js as a backend and React as a frontend.The project is divided into two parts: the backend and the frontend. The backend is built using Express.js and the frontend is built using React.The project is a good starting point for anyone who wants to learn how to build a full-stack application using Express.js and React.
 
