@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer components{
+    .form{
+        @apply grid grid-cols-2 gap-5 w-11/12;
+    }
+    .form-field{
+        @apply flex flex-col;
+    }
+    .form-field input, .form-field textarea{
+        @apply px-3 py-2 outline-none border-gray-300 rounded-md;
+    }
+    .form-field label{
+        @apply font-semibold pb-1;
+    }
+
+
+    .btn{
+        @apply px-4 py-2 bg-blue-500 text-white rounded-md;
+    }
+}

@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    @apply bg-lime-200;
+}
+
+@layer components {
+    .card{
+        @apply  p-4 w-56 bg-emerald-500 text-dark-green rounded-lg;
+    }
+}
