@@ -6,7 +6,11 @@ export default defineConfig({
   plugins: [react()],
   server :{
     proxy:{
-      '/api' : "http://localhost:8000"
+      '/api': {
+        target: "http://localhost:8000",
+        changeOrigin: true,
+        secure: false,
+      }
       // TODO: Always set proxy in vite.config and not in package.json 
     }
   }
