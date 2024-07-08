@@ -16,7 +16,8 @@ con.connect((err) => {
 	if (!err) {
 		console.log("Connected to db");
 	} else {
-		throw err;
+		console.error("\n\nERROR : Failed to connect to db!!!\n\n");
+		throw err.name;
 	}
 });
 
@@ -31,7 +32,6 @@ app.listen(PORT, () => {
 });
 
 app.use(express.static("dist"));
-app.use(express.json())
 
 
 // app.get("/api/products", (req, res) => {
@@ -61,6 +61,7 @@ app.get("/api/products",(req,res)=>{
 })
 
 
+app.use(express.json())
 app.post("/api/insert", (req, res) => {
 	// let product = {
 	// 	p_name: "Samsung",
@@ -68,6 +69,8 @@ app.post("/api/insert", (req, res) => {
 	// 	p_desc: "Samsung mobile 6gb",
 	// };
 	let product = req.body
+	console.log(req.body);
+
 	// USE EXPRESS.JSON() MIDDLEWARE FOR PASSING JSON WITH POST REQ
 
 	let sql = `INSERT INTO products SET ?`; // Alvays use SET instead of VALUES b'cos p_id is autoincrement so VALUES will show error
