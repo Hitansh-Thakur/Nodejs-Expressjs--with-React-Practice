@@ -32,6 +32,7 @@ function App() {
               //   <h2>Price : {product.p_price}</h2>
               //   <p>Desc : {product.p_desc}</p>
               // </div>
+              // TODO: mantain a local copy of product data and render productes throug it not directly foom db.the cards should rerender when a new product is inserted into database (useEffect)
               return <ProductCard name={product.p_name} price={product.p_price} desc={product.p_desc} />
             })
           }
