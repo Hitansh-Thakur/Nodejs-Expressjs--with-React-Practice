@@ -1,21 +1,21 @@
 {
-  "name": "server",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon app.js"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "dotenv": "^16.4.5",
-    "express": "^4.19.2",
-    "mysql": "^2.18.1"
-  },
-  "devDependencies": {
-    "cors": "^2.8.5",
-    "nodemon": "^3.1.4"
-  }
+	"name": "server",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"dev": "start C:\\xampp\\xampp-control.exe && nodemon app.js"
+	},
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"dotenv": "^16.4.5",
+		"express": "^4.19.2",
+		"mysql": "^2.18.1"
+	},
+	"devDependencies": {
+		"cors": "^2.8.5",
+		"nodemon": "^3.1.4"
+	}
 }
